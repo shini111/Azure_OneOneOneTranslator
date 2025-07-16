@@ -1,0 +1,37 @@
+# Ultimate Korean Translator - Requirements
+# Core dependencies for the translation application
+
+# GUI Framework (Modern Tkinter UI)
+customtkinter==5.2.2
+
+# Azure AI Integration (for DeepSeek)
+azure-ai-inference>=1.0.0b1
+azure-core>=1.28.0
+
+# Document Processing
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+beautifulsoup4>=4.12.0
+
+# Data Processing
+pandas>=2.0.0
+
+# Web Interface (Streamlit)
+streamlit>=1.28.0
+
+# File Handling
+pathlib2>=2.3.7
+openpyxl>=3.1.0
+
+# Date/Time Utilities
+python-dateutil>=2.8.2
+
+# Optional: Development Tools
+# black>=23.0.0
+# pytest>=7.0.0
+
+# Build Application
+pyinstaller>=5.13.0
+
+# Note: The application primarily uses Azure AI DeepSeek for translation
+# Make sure to configure your Azure credentials in ultimateTranslator.py

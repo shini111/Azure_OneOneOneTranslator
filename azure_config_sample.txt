@@ -1,0 +1,26 @@
+ENDPOINT=https://your-deployment-name.services.ai.azure.com/models
+API_KEY=your-actual-api-key-from-azure-ai-studio
+
+# Instructions:
+# 1. Copy this file and rename it to "azure_config.txt"
+# 2. Replace "your-deployment-name" with your actual Azure AI Studio deployment name
+# 3. Replace "your-actual-api-key-from-azure-ai-studio" with your real API key
+# 4. Save the file - it will be ignored by git for security
+# 5. NEVER commit the real azure_config.txt file to GitHub!
+
+# How to get these values:
+# 1. Go to Azure AI Studio: https://ai.azure.com
+# 2. Navigate to your DeepSeek deployment
+# 3. Go to "Keys and Endpoint" section
+# 4. Copy the endpoint URL and one of the API keys
+# 5. Paste them above
+
+# Example format:
+# ENDPOINT=https://serviceName.services.ai.azure.com/models
+# API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          
+# Security Notes:
+# - Keep your API key secret and secure
+# - Don't share it in public repositories
+# - Rotate your keys regularly
+# - Monitor usage in Azure portal
