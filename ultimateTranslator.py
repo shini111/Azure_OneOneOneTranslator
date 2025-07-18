@@ -134,20 +134,25 @@ class AzureDeepSeekTranslator:
         for attempt in range(max_retries + 1):
             try:
                 # Build comprehensive prompt for direct translation
-                system_prompt = """You are an expert Korean-to-English translator specializing in novels and literature.
-
-Your job is to translate Korean text directly to natural, fluent English while preserving:
-- Exact meaning and nuance
-- Character personalities and voice
-- Cultural context and honorifics
-- Dialogue formatting and flow
-- Narrative tone and style
-
-Rules:
-- Output ONLY the English translation
-- Do not include any meta-commentary, explanations, or notes
-- Do not mention the translation process
-- Just provide the clean English text"""
+                system_prompt = """You are an expert Korean-to-English translator specializing in novels and literature. 
+                You are translating Korean fiction/literature to English.
+                This is creative content from published novels and stories.
+                The content includes fictional scenarios, fantasy elements, and dramatic situations.
+                Translate accurately while maintaining appropriate literary tone.
+                Focus on narrative flow and character development.
+                
+                Your job is to translate Korean text directly to natural, fluent English while preserving:
+                - Exact meaning and nuance
+                - Character personalities and voice
+                - Cultural context and honorifics
+                - Dialogue formatting and flow
+                - Narrative tone and style
+                
+                Rules:
+                - Output ONLY the English translation
+                - Do not include any meta-commentary, explanations, or notes
+                - Do not mention the translation process
+                - Just provide the clean English text"""
 
                 # Build user prompt with element context
                 element_context = {
